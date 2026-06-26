@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio & Academic Management | MIVA Open University</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">
+            <h2><ISAAC class="O">Isaac.O</ISAAC> <span>Portfolio</span></h2>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item active" onclick="switchPage('home')">Home</a></li>
+                <li><a href="#about" class="nav-item" onclick="switchPage('about')">About Me</a></li>
+                <li><a href="#projects" class="nav-item" onclick="switchPage('projects')">Projects</a></li>
+                <li><a href="#planner" class="nav-item" onclick="switchPage('planner')">Academic Planner</a></li>
+                <li><a href="#contact" class="nav-item" onclick="switchPage('contact')">Contact</a></li>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <!-- 1. HOMEPAGE -->
+        <section id="home" class="page-section active-page">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1>Welcome to My Academic Hub</h1>
+                    <p class="student-name">Isaac Onomor</p>
+                    <p class="subtitle">BSc Cyber Security Student | MIVA Open University</p>
+                    <p class="bio">
+                        I am Isaac Onomor, a cybersecurity student at MIVA Open University. I am a passionate aspiring cloud security engineer currently exploring the vast world of cloud computing and access management. 
+                        This platform showcases my academic journey, technical milestones, and helps me keep track of my 
+                        daily tasks and goals as i grow in my career to becoming a  valuable assets in the field of cloud computing. Explore my projects and planner to see what I'm working on and my current skillsets.
+                    </p>
+                    <button class="cta-btn" onclick="switchPage('projects')">View My Work</button>
+                </div>
+                <div class="hero-image">
+                    <!-- Standard Profile Placeholder -->
+                    <img src="man on suite.png" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT ME PAGE -->
+        <section id="about" class="page-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Educational Background</h3>
+                    <table class="edu-table">
+                        <thead>
+                            <tr>
+                                <th>Institution</th>
+                                <th>Degree/Course</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MIVA Open University</td>
+                                <td>BSc Cyber Security</td>
+                                <td>2026 - Present</td>
+                            </tr>
+                            <tr>
+                                <td>Google Cloud</td>
+                                <td>Google Cloud Fundamentals: Core Infrastructure</td>
+                                <td>2026</td>
+                            </tr>
+                            <tr>
+                                <td>Cisco Networking Academy</td>
+                                <td>Introduction to Cybersecurity</td>
+                                <td>2026</td>
+                            </tr>
+                            <tr>
+                                <td>University Of Michigan</td>
+                                <td>Programming for Everybody (Getting Started with Python)</td>
+                                <td>2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="about-card">
+                    <h3>Technical Skills</h3>
+                    <ul class="skills-list">
+                        <li><span class="skill-tag">HTML5 & CSS3 - Basics</span></li>
+                        <li><span class="skill-tag">JavaScript - Basics</span></li>
+                        <li><span class="skill-tag">Responsive Web Design - Basics</span></li>
+                        <li><span class="skill-tag">Git & GitHub - Basics</span></li>
+                        <li><span class="skill-tag">Python Basics</span></li>
+                        <li><span class="skill-tag">Cloud Deployment -Basics</span></li>
+                        <li><span class="skill-tag">Identity & Access Management</span></li>
+                        <li><span class="skill-tag">Cloud Infrastructure - Basics</span></li>
+                        <li><span class="skill-tag">Cloud Computing - Basics</span></li>
+                        <li><span class="skill-tag">Prompt Engineering Tools - Basics</span></li>
+                        <li><span class="skill-tag">Application Deployment - Basics</span></li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h3>Career Aspirations</h3>
+                    <p>My ultimate goal is to become a Cloud Architect and DevOps Engineer. I aim to build scalable, high-availability cloud applications that solve real-world problems globally.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Hobbies & Interests</h3>
+                    <p>The idea of coding is starting to interest me, if i am not taking courses on coursera to learn new things,I am either locked in reading or enjoying solo music,I love to be found in places where value is the subjects matter, My interests are diverse and ever-evolving</p>
+                    <div class="media-box">
+                        <p><strong>Featured Audio Sample (Podcast Interest):</strong></p>
+                        <audio controls>
+                            <source src="inspiring-motivation-music.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PROJECTS PAGE -->
+        <section id="projects" class="page-section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.VcK3RXQN8__nJoAbkSJDLAHaEJ?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Project One Screenshot" class="project-img">
+                    <div class="project-info">
+                        <h3>Angular Program</h3>
+                        <p>A program that analyzes two angles of a triangle, determining if it a right angle triangle or not, and a palindrome.</p>
+                        <a href="COS 102 - Lab Assessment .pptx.pdf" target="_blank" class="project-link">Pending... &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="https://techfortalk.co.uk/wp-content/uploads/2015/06/image.png" alt="Project Two Screenshot" class="project-img">
+                    <div class="project-info">
+                        <h3>Code Programming</h3>
+                        <p>A Functional python code that's;
+                            <ol>
+                                <li>Calculates:<ul>
+                                    <li>Principal Amount</li>
+                                    <li>Interest Rate</li>
+                                    <li>Estimation of loan returns</li>
+                                </ul></li>
+                                <li>Conversion of Temperature in celsius to fahrenheits</li>
+                                <li>Create dictionary for a set of data</li>
+                                <li>Lastly, Variable assignment</li>
+                            </ol></p>
+                        <a href="Brain Wave Lab asses.pdf" target="_blank" class="project-link">View Project Report &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=400" alt="Project Three Screenshot" class="project-img">
+                    <div class="project-info">
+                        <h3>MIVA Student Tracker</h3>
+                        <p>An early interactive students porfolio program design to track students academic progress and performance.</p>
+                        <a href="index.html" target="_blank" class="project-link">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ACADEMIC PLANNER PAGE -->
+        <section id="planner" class="page-section">
+            <h2 class="section-title">Academic Planner</h2>
+            <p class="section-desc">Manage your course duties, projects, and study tracks dynamically below.</p>
+            
+            <div class="planner-box">
+                <form id="planner-form" onsubmit="addTask(event)">
+                    <input type="text" id="task-input" placeholder="Enter academic assignment or task..." required>
+                    <button type="submit" class="add-btn">Add Task</button>
+                </form>
+
+                <ul id="task-list">
+                    <!-- Tasks injected dynamically by Javascript -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- 5. CONTACT PAGE -->
+        <section id="contact" class="page-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <form id="contact-form" onsubmit="validateContactForm(event)">
+                    <div class="error-msg" id="form-errors"></div>
+                    <div class="success-msg" id="form-success">Form submitted successfully!</div>
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Lei Yang">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" placeholder="www.your@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" placeholder="080******">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Write your text here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MIVA Open University Student Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
